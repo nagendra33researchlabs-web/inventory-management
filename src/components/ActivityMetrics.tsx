@@ -31,7 +31,7 @@ export default function ActivityMetrics({ metrics }: ActivityMetricsProps) {
       <div className="grid grid-cols-5 gap-6">
         {metricsList.map((metric, index) => (
           <div key={index} className="text-center">
-            <div className="text-3xl font-bold mb-1">{metric.value}</div>
+            <div className="text-3xl font-bold mb-1 text-purple-900">{metric.value}</div>
             <div className="flex items-center justify-center gap-1 mb-1">
               {metric.change > 0 && (
                 <>
