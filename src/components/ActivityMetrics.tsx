@@ -63,15 +63,15 @@ export default function ActivityMetrics({ metrics }: ActivityMetricsProps) {
               {metric.change === 0 && <span className="text-xs text-gray-400">0%</span>}
             </div>
             <div className="text-xs text-gray-500 uppercase">{metric.label}</div>
-            <div className="text-xs text-gray-400">
+            {/* <div className="text-xs text-gray-400">
               <h6>User name: {user ? user.name : 'No user'}</h6>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
       <div className="flex gap-2">
-      <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={handleLogin}>Set User</button>
-      <button onClick={handleLogout} className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Clear User</button>
+      {/* <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={handleLogin}>Set User</button>
+      <button onClick={handleLogout} className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Clear User</button> */}
       </div>
     </div>
   );
