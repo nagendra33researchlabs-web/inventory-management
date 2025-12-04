@@ -18,12 +18,8 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-64 bg-gradient-to-b from-purple-600 via-purple-700 to-purple-800 min-h-screen flex flex-col text-white">
-      <div className="p-[1.3rem] bg-[#fff]">
-        <h1 className="text-2xl font-semibold text-purple-800">inventor.io</h1>
-      </div>
-
-      <nav className="flex-1 px-3 py-2">
+    <div className="rounded-tr-xl w-64 bg-gradient-to-b from-purple-600 via-purple-700 to-purple-800 min-h-full flex flex-col text-white">
+      <nav className="flex-1 px-3 py-2 mt-4">
         {menuItems.map((item) => {
           const Icon = item.icon;
           return (
@@ -33,7 +29,7 @@ export default function Sidebar() {
               className={({ isActive }) =>
                 `w-full flex items-center gap-3 px-4 py-3 rounded-lg mb-1 transition-colors ${
                   isActive
-                    ? 'bg-white/20 text-white'
+                    ? 'bg-purple-800 text-white'
                     : 'text-purple-200 hover:bg-white/10'
                 }`
               }
