@@ -19,11 +19,11 @@ export default function Sidebar() {
 
   return (
     <div className="w-64 bg-gradient-to-b from-purple-600 via-purple-700 to-purple-800 min-h-screen flex flex-col text-white">
-      <div className="p-6 ">
-        <h1 className="text-xl font-semibold">inventor.io</h1>
+      <div className="p-[1.3rem] bg-[#fff]">
+        <h1 className="text-2xl font-semibold text-purple-800">inventor.io</h1>
       </div>
 
-      <nav className="flex-1 px-3">
+      <nav className="flex-1 px-3 py-2">
         {menuItems.map((item) => {
           const Icon = item.icon;
           return (
